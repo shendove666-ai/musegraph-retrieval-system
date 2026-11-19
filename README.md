@@ -1,7 +1,5 @@
 # MuseGraph
 
-[![Tests](https://github.com/shendove666-ai/musegraph-retrieval-system/actions/workflows/tests.yml/badge.svg)](https://github.com/shendove666-ai/musegraph-retrieval-system/actions/workflows/tests.yml)
-
 ## Overview
 
 MuseGraph is an explainable passage retrieval and comparison system for historical music literature. I built it to recover a source when I remember a name, a short quotation, or the substance of an argument. The Flask application searches 2,286 passages from five Project Gutenberg books and shows the evidence behind each result.
