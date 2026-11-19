@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}MuseGraph{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="wordmark" href="{{ url_for('web.index') }}">MuseGraph</a>
+      <nav aria-label="Main navigation">
+        {% for label, endpoint, active_endpoints in [
+          ('Search', 'web.index', ['web.index', 'web.search', 'web.document']),
+          ('Compare', 'web.compare', ['web.compare']),
+          ('History', 'web.history', ['web.history'])
+        ] %}
+        <a href="{{ url_for(endpoint) }}"{% if request.endpoint in active_endpoints %} aria-current="page"{% endif %}>{{ label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell">{% block content %}{% endblock %}</main>
+  <footer class="shell source-notice">
+    <p>This eBook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the <a href="{{ url_for('web.corpus_license') }}">Project Gutenberg License</a> included with this eBook or online at <a href="https://www.gutenberg.org/policy/license.html">www.gutenberg.org</a>. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook.</p>
+  </footer>
+</body>
+</html>

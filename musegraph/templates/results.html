@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Search results · MuseGraph{% endblock %}
+{% block content %}
+<h1>Search results</h1>
+<form method="post" action="{{ url_for('web.search') }}" class="panel">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label for="query">Topic or quotation</label>
+  <input id="query" name="q" type="search" value="{{ query }}" required maxlength="{{ query_limit }}">
+  <div class="controls">
+    <div>
+      <label for="mode">Retrieval mode</label>
+      <select id="mode" name="mode">
+        {% for key, label in modes.items() %}
+        <option value="{{ key }}"{% if mode == key %} selected{% endif %}>{{ label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit">Search</button>
+  </div>
+</form>
+{% if error %}
+<p class="notice" role="alert">{{ error }} <a href="{{ url_for('web.search', q=query, mode='lexical') }}">Search with TF-IDF</a></p>
+{% elif hits %}
+<div class="result-heading">
+  <h2>Passages</h2>
+  <p class="muted">Showing {{ hits|length }} of {{ total }} matches across {{ corpus_size }} passages</p>
+</div>
+{% if mode == 'hybrid' %}
+<p class="muted">Hybrid weights{% if use_semantic %} · 45% TF-IDF · 20% Winnowing · 35% Sentence-BERT{% else %} · 69.2% TF-IDF · 30.8% Winnowing{% endif %}</p>
+{% endif %}
+<ol class="results">
+  {% for hit in hits %}
+  <li class="panel result">
+    <div class="result-heading">
+      <h3><a href="{{ url_for('web.document', document_id=hit.document.id) }}">{{ hit.document.title }}</a></h3>
+      <span class="score">Rank score {{ '%.3f'|format(hit.score) }}</span>
+    </div>
+    <p class="byline">{{ hit.document.author }}{% if hit.document.locator %} · {{ hit.document.locator }}{% endif %}</p>
+    <blockquote>{{ hit.passage }}</blockquote>
+    <dl class="signals">
+      <div><dt>TF-IDF</dt><dd>{{ '%.3f'|format(hit.lexical) }}</dd></div>
+      <div><dt>Winnowing</dt><dd>{{ '%.3f'|format(hit.fingerprint) }}</dd></div>
+      {% if hit.semantic is not none %}<div><dt>Sentence-BERT</dt><dd>{{ '%.3f'|format(hit.semantic) }}</dd></div>{% endif %}
+      <div><dt>Feedback</dt><dd>{{ '%+.2f'|format(hit.adjustment) if hit.vote else '0.00' }}</dd></div>
+    </dl>
+    {% if hit.matched_terms %}<p class="evidence">Matched terms <strong>{{ hit.matched_terms|join(', ') }}</strong></p>{% endif %}
+    {% if hit.matched_phrase %}<p class="evidence">Shared phrase <mark>{{ hit.matched_phrase }}</mark></p>{% endif %}
+    <form method="post" action="{{ url_for('web.feedback') }}" class="votes" aria-label="Feedback for {{ hit.document.title }} {{ hit.document.locator }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="q" value="{{ query }}">
+      <input type="hidden" name="mode" value="{{ mode }}">
+      <input type="hidden" name="document_id" value="{{ hit.document.id }}">
+      <button class="secondary" name="vote" value="1" aria-pressed="{{ 'true' if hit.vote == 1 else 'false' }}">Relevant</button>
+      <button class="secondary" name="vote" value="-1" aria-pressed="{{ 'true' if hit.vote == -1 else 'false' }}">Off topic</button>
+      {% if hit.vote %}<button class="secondary" name="vote" value="0">Clear vote</button>{% endif %}
+    </form>
+  </li>
+  {% endfor %}
+</ol>
+{% elif not corpus_size %}
+<p class="notice">The corpus is empty. Run <code>musegraph init-db</code>, then search again.</p>
+{% else %}
+<p class="notice">No matching passages.{% if mode == 'fingerprint' %} Winnowing works best with a quotation of eight or more words.{% else %} Try a different topic or a longer quotation.{% endif %}</p>
+{% endif %}
+{% endblock %}

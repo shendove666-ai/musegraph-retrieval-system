@@ -1,0 +1,3947 @@
+{
+  "corpus_sha256": "993afaf0a5652b264e2422d33a3c56ab87282987b0205ca4595960418b3c8857",
+  "judgments_sha256": "74a965019e0be103d6b194fe2ed81af340fa855c291fca4cc8ec22ce7c4d569a",
+  "passage_count": 2286,
+  "semantic_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "semantic_revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "environment": {
+    "python": "3.13.17",
+    "platform": "Windows",
+    "sentence_transformers": "5.7.0",
+    "torch": "2.15.0+cpu"
+  },
+  "timing": {
+    "sparse_setup_seconds": 4.0371492999838665,
+    "dense_setup_seconds": 311.40459399996325,
+    "benchmark_seconds": 324.075698199973
+  },
+  "reports": [
+    {
+      "mode": "lexical",
+      "k": 5,
+      "query_count": 10,
+      "macro": {
+        "precision": 0.5,
+        "recall": 0.7455555555555555,
+        "ndcg": 0.8417159633858502
+      },
+      "timing": {
+        "retrieval_seconds": 7.0722429000306875,
+        "median_query_ms": 836.3401000096928
+      },
+      "categories": {
+        "paraphrase": {
+          "query_count": 3,
+          "precision": 0.8666666666666667,
+          "recall": 0.4851851851851852,
+          "ndcg": 0.6734634866660082
+        },
+        "quotation": {
+          "query_count": 4,
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0
+        },
+        "terms": {
+          "query_count": 3,
+          "precision": 0.5333333333333333,
+          "recall": 0.6666666666666666,
+          "ndcg": 0.7989230579534926
+        }
+      },
+      "queries": [
+        {
+          "id": "R01",
+          "query": "how recitative carries the story while an aria gives expression to feeling",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "ndcg": 0.8723785999487659
+          },
+          "retrieval_ms": 903.6732999957167,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0234",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0229",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0230",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0249",
+              "grade": 1
+            },
+            {
+              "id": "pg5724-0061",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg17474-0227",
+              "grade": 3,
+              "judged": true,
+              "score": 0.18763791528288679,
+              "lexical": 0.18763791528288679,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitative",
+                "aria",
+                "how",
+                "the",
+                "an",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0233",
+              "grade": 2,
+              "judged": true,
+              "score": 0.16202355650018535,
+              "lexical": 0.16202355650018535,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "aria",
+                "carries",
+                "recitative",
+                "how",
+                "an",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0232",
+              "grade": 1,
+              "judged": true,
+              "score": 0.1407064508269943,
+              "lexical": 0.1407064508269943,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitative",
+                "expression",
+                "how",
+                "the",
+                "an",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0007",
+              "grade": 0,
+              "judged": true,
+              "score": 0.12139216266468106,
+              "lexical": 0.12139216266468106,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitative",
+                "aria",
+                "how",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0228",
+              "grade": 1,
+              "judged": true,
+              "score": 0.1208641824873998,
+              "lexical": 0.1208641824873998,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitative",
+                "expression",
+                "an",
+                "how",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R02",
+          "query": "Blind Tom reproducing a piece at the piano after hearing it once",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.5555555555555556,
+            "ndcg": 0.7075153423438777
+          },
+          "retrieval_ms": 820.3506999998353,
+          "missing_relevant": [
+            {
+              "id": "pg28056-0237",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0248",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0228",
+              "grade": 2
+            },
+            {
+              "id": "pg28056-0236",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg28056-0247",
+              "grade": 3,
+              "judged": true,
+              "score": 0.22542790076947672,
+              "lexical": 0.22542790076947672,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "piece",
+                "once",
+                "piano",
+                "the",
+                "at",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0244",
+              "grade": 3,
+              "judged": true,
+              "score": 0.21452703987735872,
+              "lexical": 0.21452703987735872,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "piece",
+                "hearing",
+                "piano",
+                "at",
+                "it",
+                "the"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0231",
+              "grade": 1,
+              "judged": true,
+              "score": 0.2048303818788748,
+              "lexical": 0.2048303818788748,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "hearing",
+                "after",
+                "it",
+                "the",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0246",
+              "grade": 1,
+              "judged": true,
+              "score": 0.16960246703195275,
+              "lexical": 0.16960246703195275,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "once",
+                "piano",
+                "after",
+                "it",
+                "the",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0243",
+              "grade": 2,
+              "judged": true,
+              "score": 0.16380215276362742,
+              "lexical": 0.16380215276362742,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "blind",
+                "tom",
+                "once",
+                "piano",
+                "the",
+                "it",
+                "a",
+                "at"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R03",
+          "query": "Leoni Meyer Lyon Yigdal Thomas Olivers",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "ndcg": 0.9926195041747018
+          },
+          "retrieval_ms": 43.06900000665337,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg18444-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 0.4237513751163301,
+              "lexical": 0.4237513751163301,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "yigdal",
+                "leoni",
+                "lyon",
+                "olivers",
+                "meyer"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0041",
+              "grade": 2,
+              "judged": true,
+              "score": 0.12684901519999867,
+              "lexical": 0.12684901519999867,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "yigdal",
+                "leoni"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0651",
+              "grade": 0,
+              "judged": true,
+              "score": 0.0765768037718505,
+              "lexical": 0.0765768037718505,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "meyer",
+                "lyon"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0038",
+              "grade": 1,
+              "judged": true,
+              "score": 0.06649260510123588,
+              "lexical": 0.06649260510123588,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "olivers",
+                "thomas"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0600",
+              "grade": 0,
+              "judged": true,
+              "score": 0.06634272960383866,
+              "lexical": 0.06634272960383866,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "olivers",
+                "thomas"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R04",
+          "query": "London Musical Union Monday Popular Concerts chamber music",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.6,
+            "recall": 0.3333333333333333,
+            "ndcg": 0.774770674856028
+          },
+          "retrieval_ms": 622.6929000113159,
+          "missing_relevant": [
+            {
+              "id": "pg70203-0038",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0040",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0041",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0036",
+              "grade": 1
+            },
+            {
+              "id": "pg70203-0042",
+              "grade": 1
+            },
+            {
+              "id": "pg70203-0044",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg70203-0039",
+              "grade": 3,
+              "judged": true,
+              "score": 0.2867646825147921,
+              "lexical": 0.2867646825147921,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "monday",
+                "concerts",
+                "popular",
+                "chamber",
+                "london",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0043",
+              "grade": 2,
+              "judged": true,
+              "score": 0.23873415414091334,
+              "lexical": 0.23873415414091334,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "monday",
+                "concerts",
+                "popular",
+                "chamber",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0020",
+              "grade": 0,
+              "judged": true,
+              "score": 0.22506358740670976,
+              "lexical": 0.22506358740670976,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "concerts",
+                "monday",
+                "chamber",
+                "union",
+                "popular",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0037",
+              "grade": 3,
+              "judged": true,
+              "score": 0.22165161178999981,
+              "lexical": 0.22165161178999981,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "union",
+                "concerts",
+                "london",
+                "chamber",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0009",
+              "grade": 0,
+              "judged": true,
+              "score": 0.22018402660371314,
+              "lexical": 0.22018402660371314,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "concerts",
+                "monday",
+                "chamber",
+                "union",
+                "popular",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R05",
+          "query": "Wagner's recurring themes associated with characters or ideas in a music drama",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.8,
+            "recall": 0.5,
+            "ndcg": 0.44049651770538095
+          },
+          "retrieval_ms": 901.4482999918982,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0249",
+              "grade": 3
+            },
+            {
+              "id": "pg17474-0250",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1
+            },
+            {
+              "id": "pg5724-0441",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg5724-0447",
+              "grade": 2,
+              "judged": true,
+              "score": 0.1630717051721892,
+              "lexical": 0.1630717051721892,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "themes",
+                "associated",
+                "ideas",
+                "wagner's",
+                "with",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0322",
+              "grade": 0,
+              "judged": true,
+              "score": 0.1433554706307767,
+              "lexical": 0.1433554706307767,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "characters",
+                "wagner's",
+                "drama",
+                "a",
+                "with",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0307",
+              "grade": 2,
+              "judged": true,
+              "score": 0.14214931373843803,
+              "lexical": 0.14214931373843803,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "themes",
+                "wagner's",
+                "drama",
+                "with",
+                "a",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0247",
+              "grade": 1,
+              "judged": true,
+              "score": 0.13776627026698812,
+              "lexical": 0.13776627026698812,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "wagner's",
+                "drama",
+                "ideas",
+                "or",
+                "music",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0448",
+              "grade": 1,
+              "judged": true,
+              "score": 0.11589819861835089,
+              "lexical": 0.11589819861835089,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "themes",
+                "associated",
+                "in",
+                "with",
+                "a"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R06",
+          "query": "New York Philharmonic seating plan first violins double basses",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.4,
+            "recall": 0.6666666666666666,
+            "ndcg": 0.6293789948297479
+          },
+          "retrieval_ms": 392.9970000172034,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0077",
+              "grade": 3
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg17474-0076",
+              "grade": 3,
+              "judged": true,
+              "score": 0.2531936236368003,
+              "lexical": 0.2531936236368003,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "philharmonic",
+                "plan",
+                "seating",
+                "york",
+                "new"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0090",
+              "grade": 0,
+              "judged": true,
+              "score": 0.19237111806907725,
+              "lexical": 0.19237111806907725,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "basses",
+                "violins",
+                "double"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0081",
+              "grade": 1,
+              "judged": true,
+              "score": 0.15292732617532953,
+              "lexical": 0.15292732617532953,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "violins",
+                "basses",
+                "philharmonic",
+                "double",
+                "york",
+                "new",
+                "first"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0075",
+              "grade": 0,
+              "judged": true,
+              "score": 0.12846171064129186,
+              "lexical": 0.12846171064129186,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "violins",
+                "basses",
+                "double",
+                "first"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0234",
+              "grade": 0,
+              "judged": true,
+              "score": 0.11594613295665646,
+              "lexical": 0.11594613295665646,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "basses",
+                "double",
+                "violins"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R07",
+          "query": "The recitatives which they wrote had the fluency of spoken words and were not retarded by melodic forms",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 852.3295000195503,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg17474-0218",
+              "grade": 3,
+              "judged": true,
+              "score": 0.3346916327661982,
+              "lexical": 0.3346916327661982,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "retarded",
+                "fluency",
+                "recitatives",
+                "melodic",
+                "spoken",
+                "forms",
+                "wrote",
+                "words"
+              ],
+              "matched_phrase": "which they wrote had the"
+            },
+            {
+              "id": "pg17474-0217",
+              "grade": 0,
+              "judged": true,
+              "score": 0.10840069731893436,
+              "lexical": 0.10840069731893436,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitatives",
+                "they",
+                "words",
+                "were",
+                "the",
+                "which",
+                "of",
+                "and"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0287",
+              "grade": 0,
+              "judged": true,
+              "score": 0.10348385745719786,
+              "lexical": 0.10348385745719786,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitatives",
+                "words",
+                "the",
+                "were",
+                "had",
+                "by",
+                "which",
+                "not"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0448",
+              "grade": 0,
+              "judged": true,
+              "score": 0.09631071686160356,
+              "lexical": 0.09631071686160356,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "forms",
+                "melodic",
+                "words",
+                "the",
+                "which",
+                "of",
+                "and",
+                "by"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0285",
+              "grade": 0,
+              "judged": true,
+              "score": 0.0961608901285449,
+              "lexical": 0.0961608901285449,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "recitatives",
+                "words",
+                "were",
+                "the",
+                "which",
+                "of",
+                "and",
+                "by"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R08",
+          "query": "Only the music as Leoni sang it prompted his own song",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 869.111799984239,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg18444-0041",
+              "grade": 3,
+              "judged": true,
+              "score": 0.24673525644299052,
+              "lexical": 0.24673525644299052,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "leoni",
+                "prompted",
+                "sang",
+                "song",
+                "own",
+                "only",
+                "it",
+                "the"
+              ],
+              "matched_phrase": "Only the music as Leoni"
+            },
+            {
+              "id": "pg18444-0040",
+              "grade": 0,
+              "judged": true,
+              "score": 0.18790803583259272,
+              "lexical": 0.18790803583259272,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "leoni",
+                "song",
+                "only",
+                "his",
+                "it",
+                "the",
+                "as"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0010",
+              "grade": 0,
+              "judged": true,
+              "score": 0.12125014094990844,
+              "lexical": 0.12125014094990844,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "sang",
+                "song",
+                "own",
+                "only",
+                "his",
+                "the",
+                "it",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0251",
+              "grade": 0,
+              "judged": true,
+              "score": 0.10943732296529698,
+              "lexical": 0.10943732296529698,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "own",
+                "sang",
+                "song",
+                "only",
+                "it",
+                "his",
+                "music",
+                "as"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0374",
+              "grade": 0,
+              "judged": true,
+              "score": 0.09877181447567183,
+              "lexical": 0.09877181447567183,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "prompted",
+                "own",
+                "his",
+                "the",
+                "it",
+                "as"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R09",
+          "query": "the finest of all his many illustrations of the principle of fundamental or typical phrases in dramatic music",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 810.833299998194,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg5724-0428",
+              "grade": 3,
+              "judged": true,
+              "score": 0.26770462240437554,
+              "lexical": 0.26770462240437554,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "illustrations",
+                "typical",
+                "fundamental",
+                "principle",
+                "phrases",
+                "dramatic",
+                "finest",
+                "many"
+              ],
+              "matched_phrase": "the finest of all his"
+            },
+            {
+              "id": "pg17474-0249",
+              "grade": 0,
+              "judged": true,
+              "score": 0.19475913257651792,
+              "lexical": 0.19475913257651792,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "phrases",
+                "typical",
+                "of",
+                "the",
+                "or",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0030",
+              "grade": 0,
+              "judged": true,
+              "score": 0.18853068826549238,
+              "lexical": 0.18853068826549238,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "principle",
+                "phrases",
+                "fundamental",
+                "many",
+                "of",
+                "the",
+                "all",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0157",
+              "grade": 0,
+              "judged": true,
+              "score": 0.14905498542308238,
+              "lexical": 0.14905498542308238,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "principle",
+                "fundamental",
+                "or",
+                "of",
+                "the",
+                "all",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0192",
+              "grade": 0,
+              "judged": true,
+              "score": 0.146930599010139,
+              "lexical": 0.146930599010139,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "typical",
+                "fundamental",
+                "phrases",
+                "dramatic",
+                "of",
+                "the",
+                "his",
+                "in"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R10",
+          "query": "the musical critic of The Times newspaper then decided to try a series of good chamber music concerts",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 855.7371000060812,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg70203-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 0.37024287966517794,
+              "lexical": 0.37024287966517794,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "series",
+                "concerts",
+                "newspaper",
+                "try",
+                "decided",
+                "times",
+                "chamber",
+                "critic"
+              ],
+              "matched_phrase": "critic of _The Times_ newspaper"
+            },
+            {
+              "id": "pg17474-0314",
+              "grade": 0,
+              "judged": true,
+              "score": 0.145769402752534,
+              "lexical": 0.145769402752534,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "critic",
+                "newspaper",
+                "good",
+                "the",
+                "of",
+                "to",
+                "a",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0036",
+              "grade": 0,
+              "judged": true,
+              "score": 0.14543396765488623,
+              "lexical": 0.14543396765488623,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "series",
+                "concerts",
+                "chamber",
+                "the",
+                "of",
+                "music",
+                "musical",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0044",
+              "grade": 0,
+              "judged": true,
+              "score": 0.14331885679061995,
+              "lexical": 0.14331885679061995,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "concerts",
+                "series",
+                "chamber",
+                "good",
+                "musical",
+                "the",
+                "music",
+                "of"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0309",
+              "grade": 0,
+              "judged": true,
+              "score": 0.1386267010397364,
+              "lexical": 0.1386267010397364,
+              "fingerprint": 0.0,
+              "semantic": null,
+              "matched_terms": [
+                "critic",
+                "try",
+                "good",
+                "the",
+                "of",
+                "to",
+                "a",
+                "music"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "fingerprint",
+      "k": 5,
+      "query_count": 10,
+      "macro": {
+        "precision": 0.08,
+        "recall": 0.4,
+        "ndcg": 0.4
+      },
+      "timing": {
+        "retrieval_seconds": 0.16325879999203607,
+        "median_query_ms": 17.37919999868609
+      },
+      "categories": {
+        "paraphrase": {
+          "query_count": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        },
+        "quotation": {
+          "query_count": 4,
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0
+        },
+        "terms": {
+          "query_count": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ndcg": 0.0
+        }
+      },
+      "queries": [
+        {
+          "id": "R01",
+          "query": "how recitative carries the story while an aria gives expression to feeling",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 18.453099997714162,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0227",
+              "grade": 3
+            },
+            {
+              "id": "pg17474-0233",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0234",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0228",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0229",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0230",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0232",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0249",
+              "grade": 1
+            },
+            {
+              "id": "pg5724-0061",
+              "grade": 1
+            }
+          ],
+          "ranked": []
+        },
+        {
+          "id": "R02",
+          "query": "Blind Tom reproducing a piece at the piano after hearing it once",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 14.397599967196584,
+          "missing_relevant": [
+            {
+              "id": "pg28056-0237",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0244",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0247",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0248",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0228",
+              "grade": 2
+            },
+            {
+              "id": "pg28056-0243",
+              "grade": 2
+            },
+            {
+              "id": "pg28056-0231",
+              "grade": 1
+            },
+            {
+              "id": "pg28056-0236",
+              "grade": 1
+            },
+            {
+              "id": "pg28056-0246",
+              "grade": 1
+            }
+          ],
+          "ranked": []
+        },
+        {
+          "id": "R03",
+          "query": "Leoni Meyer Lyon Yigdal Thomas Olivers",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 10.701099992729723,
+          "missing_relevant": [
+            {
+              "id": "pg18444-0040",
+              "grade": 3
+            },
+            {
+              "id": "pg18444-0041",
+              "grade": 2
+            },
+            {
+              "id": "pg18444-0038",
+              "grade": 1
+            }
+          ],
+          "ranked": []
+        },
+        {
+          "id": "R04",
+          "query": "London Musical Union Monday Popular Concerts chamber music",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 8.357100014109164,
+          "missing_relevant": [
+            {
+              "id": "pg70203-0037",
+              "grade": 3
+            },
+            {
+              "id": "pg70203-0039",
+              "grade": 3
+            },
+            {
+              "id": "pg70203-0038",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0040",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0041",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0043",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0036",
+              "grade": 1
+            },
+            {
+              "id": "pg70203-0042",
+              "grade": 1
+            },
+            {
+              "id": "pg70203-0044",
+              "grade": 1
+            }
+          ],
+          "ranked": []
+        },
+        {
+          "id": "R05",
+          "query": "Wagner's recurring themes associated with characters or ideas in a music drama",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 20.782000035978854,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0249",
+              "grade": 3
+            },
+            {
+              "id": "pg17474-0250",
+              "grade": 2
+            },
+            {
+              "id": "pg5724-0307",
+              "grade": 2
+            },
+            {
+              "id": "pg5724-0447",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0247",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1
+            },
+            {
+              "id": "pg5724-0441",
+              "grade": 1
+            },
+            {
+              "id": "pg5724-0448",
+              "grade": 1
+            }
+          ],
+          "ranked": []
+        },
+        {
+          "id": "R06",
+          "query": "New York Philharmonic seating plan first violins double basses",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 8.719799981918186,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0076",
+              "grade": 3
+            },
+            {
+              "id": "pg17474-0077",
+              "grade": 3
+            },
+            {
+              "id": "pg17474-0081",
+              "grade": 1
+            }
+          ],
+          "ranked": []
+        },
+        {
+          "id": "R07",
+          "query": "The recitatives which they wrote had the fluency of spoken words and were not retarded by melodic forms",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 20.473800017498434,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg17474-0218",
+              "grade": 3,
+              "judged": true,
+              "score": 1.0,
+              "lexical": 0.3346916327661982,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "retarded",
+                "fluency",
+                "recitatives",
+                "melodic",
+                "spoken",
+                "forms",
+                "wrote",
+                "words"
+              ],
+              "matched_phrase": "which they wrote had the"
+            }
+          ]
+        },
+        {
+          "id": "R08",
+          "query": "Only the music as Leoni sang it prompted his own song",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 16.30529999965802,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg18444-0041",
+              "grade": 3,
+              "judged": true,
+              "score": 1.0,
+              "lexical": 0.24673525644299052,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "leoni",
+                "prompted",
+                "sang",
+                "song",
+                "own",
+                "only",
+                "it",
+                "the"
+              ],
+              "matched_phrase": "Only the music as Leoni"
+            }
+          ]
+        },
+        {
+          "id": "R09",
+          "query": "the finest of all his many illustrations of the principle of fundamental or typical phrases in dramatic music",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 26.33669995702803,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg5724-0428",
+              "grade": 3,
+              "judged": true,
+              "score": 1.0,
+              "lexical": 0.26770462240437554,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "illustrations",
+                "typical",
+                "fundamental",
+                "principle",
+                "phrases",
+                "dramatic",
+                "finest",
+                "many"
+              ],
+              "matched_phrase": "the finest of all his"
+            }
+          ]
+        },
+        {
+          "id": "R10",
+          "query": "the musical critic of The Times newspaper then decided to try a series of good chamber music concerts",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 18.732300028204918,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg70203-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 1.0,
+              "lexical": 0.37024287966517794,
+              "fingerprint": 1.0,
+              "semantic": null,
+              "matched_terms": [
+                "series",
+                "concerts",
+                "newspaper",
+                "try",
+                "decided",
+                "times",
+                "chamber",
+                "critic"
+              ],
+              "matched_phrase": "critic of _The Times_ newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "semantic",
+      "k": 5,
+      "query_count": 10,
+      "macro": {
+        "precision": 0.4,
+        "recall": 0.4011111111111111,
+        "ndcg": 0.4208757745079722
+      },
+      "timing": {
+        "retrieval_seconds": 0.6202843000064604,
+        "median_query_ms": 52.08345002029091
+      },
+      "categories": {
+        "paraphrase": {
+          "query_count": 3,
+          "precision": 0.7333333333333334,
+          "recall": 0.4111111111111111,
+          "ndcg": 0.43733522752844944
+        },
+        "quotation": {
+          "query_count": 4,
+          "precision": 0.05,
+          "recall": 0.25,
+          "ndcg": 0.25
+        },
+        "terms": {
+          "query_count": 3,
+          "precision": 0.5333333333333333,
+          "recall": 0.5925925925925926,
+          "ndcg": 0.6322506874981246
+        }
+      },
+      "queries": [
+        {
+          "id": "R01",
+          "query": "how recitative carries the story while an aria gives expression to feeling",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "ndcg": 0.4590115438949853
+          },
+          "retrieval_ms": 167.83639998175204,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0233",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0234",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0228",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0229",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0230",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0232",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg17474-0249",
+              "grade": 1,
+              "judged": true,
+              "score": 0.609670877456665,
+              "lexical": 0.06963818721801256,
+              "fingerprint": 0.0,
+              "semantic": 0.609670877456665,
+              "matched_terms": [
+                "aria",
+                "how",
+                "an",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1,
+              "judged": true,
+              "score": 0.6056616902351379,
+              "lexical": 0.09092578431679202,
+              "fingerprint": 0.0,
+              "semantic": 0.6056616902351379,
+              "matched_terms": [
+                "recitative",
+                "expression",
+                "how",
+                "to",
+                "the",
+                "an"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0061",
+              "grade": 1,
+              "judged": true,
+              "score": 0.5714205503463745,
+              "lexical": 0.11723691859039163,
+              "fingerprint": 0.0,
+              "semantic": 0.5714205503463745,
+              "matched_terms": [
+                "aria",
+                "gives",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0227",
+              "grade": 3,
+              "judged": true,
+              "score": 0.5692164897918701,
+              "lexical": 0.18763791528288679,
+              "fingerprint": 0.0,
+              "semantic": 0.5692164897918701,
+              "matched_terms": [
+                "recitative",
+                "aria",
+                "how",
+                "the",
+                "an",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0009",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5612064599990845,
+              "lexical": 0.0318830434134159,
+              "fingerprint": 0.0,
+              "semantic": 0.5612064599990845,
+              "matched_terms": [
+                "feeling",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R02",
+          "query": "Blind Tom reproducing a piece at the piano after hearing it once",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.6,
+            "recall": 0.3333333333333333,
+            "ndcg": 0.41465483587526814
+          },
+          "retrieval_ms": 52.30239999946207,
+          "missing_relevant": [
+            {
+              "id": "pg28056-0237",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0244",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0247",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0243",
+              "grade": 2
+            },
+            {
+              "id": "pg28056-0231",
+              "grade": 1
+            },
+            {
+              "id": "pg28056-0246",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg28056-0228",
+              "grade": 2,
+              "judged": true,
+              "score": 0.6966716051101685,
+              "lexical": 0.10640850447539374,
+              "fingerprint": 0.0,
+              "semantic": 0.6966716051101685,
+              "matched_terms": [
+                "tom",
+                "piano",
+                "after",
+                "at",
+                "the",
+                "it",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0248",
+              "grade": 3,
+              "judged": true,
+              "score": 0.6665201187133789,
+              "lexical": 0.13472218255334753,
+              "fingerprint": 0.0,
+              "semantic": 0.6665201187133789,
+              "matched_terms": [
+                "blind",
+                "tom",
+                "piece",
+                "it",
+                "the",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0236",
+              "grade": 1,
+              "judged": true,
+              "score": 0.658511757850647,
+              "lexical": 0.1618814962970292,
+              "fingerprint": 0.0,
+              "semantic": 0.658511757850647,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "hearing",
+                "the",
+                "it",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0225",
+              "grade": 0,
+              "judged": true,
+              "score": 0.6183357238769531,
+              "lexical": 0.10944871969680375,
+              "fingerprint": 0.0,
+              "semantic": 0.6183357238769531,
+              "matched_terms": [
+                "blind",
+                "tom",
+                "the",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0239",
+              "grade": 0,
+              "judged": true,
+              "score": 0.6180462837219238,
+              "lexical": 0.08569686072973366,
+              "fingerprint": 0.0,
+              "semantic": 0.6180462837219238,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "the",
+                "a",
+                "it"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R03",
+          "query": "Leoni Meyer Lyon Yigdal Thomas Olivers",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 0.3333333333333333,
+            "ndcg": 0.7452525342261976
+          },
+          "retrieval_ms": 42.21549996873364,
+          "missing_relevant": [
+            {
+              "id": "pg18444-0041",
+              "grade": 2
+            },
+            {
+              "id": "pg18444-0038",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg18444-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 0.4409329295158386,
+              "lexical": 0.4237513751163301,
+              "fingerprint": 0.0,
+              "semantic": 0.4409329295158386,
+              "matched_terms": [
+                "yigdal",
+                "leoni",
+                "lyon",
+                "olivers",
+                "meyer"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0135",
+              "grade": 0,
+              "judged": true,
+              "score": 0.4183906018733978,
+              "lexical": 0,
+              "fingerprint": 0.0,
+              "semantic": 0.4183906018733978,
+              "matched_terms": [],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0539",
+              "grade": 0,
+              "judged": true,
+              "score": 0.3814048767089844,
+              "lexical": 0,
+              "fingerprint": 0.0,
+              "semantic": 0.3814048767089844,
+              "matched_terms": [],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0134",
+              "grade": 0,
+              "judged": true,
+              "score": 0.36959436535835266,
+              "lexical": 0,
+              "fingerprint": 0.0,
+              "semantic": 0.36959436535835266,
+              "matched_terms": [],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0236",
+              "grade": 0,
+              "judged": true,
+              "score": 0.36468368768692017,
+              "lexical": 0.011782172924831911,
+              "fingerprint": 0.0,
+              "semantic": 0.36468368768692017,
+              "matched_terms": [
+                "thomas"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R04",
+          "query": "London Musical Union Monday Popular Concerts chamber music",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.8,
+            "recall": 0.4444444444444444,
+            "ndcg": 0.4439731298514547
+          },
+          "retrieval_ms": 48.47979999613017,
+          "missing_relevant": [
+            {
+              "id": "pg70203-0039",
+              "grade": 3
+            },
+            {
+              "id": "pg70203-0040",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0041",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0043",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0042",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg70203-0036",
+              "grade": 1,
+              "judged": true,
+              "score": 0.672374963760376,
+              "lexical": 0.17500501897367518,
+              "fingerprint": 0.0,
+              "semantic": 0.672374963760376,
+              "matched_terms": [
+                "concerts",
+                "london",
+                "union",
+                "chamber",
+                "music",
+                "musical"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0038",
+              "grade": 2,
+              "judged": true,
+              "score": 0.6696878671646118,
+              "lexical": 0.1649113470586436,
+              "fingerprint": 0.0,
+              "semantic": 0.6696878671646118,
+              "matched_terms": [
+                "concerts",
+                "union",
+                "chamber",
+                "london",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0037",
+              "grade": 3,
+              "judged": true,
+              "score": 0.6354186534881592,
+              "lexical": 0.22165161178999981,
+              "fingerprint": 0.0,
+              "semantic": 0.6354186534881592,
+              "matched_terms": [
+                "union",
+                "concerts",
+                "london",
+                "chamber",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0044",
+              "grade": 1,
+              "judged": true,
+              "score": 0.624890148639679,
+              "lexical": 0.19730668873846297,
+              "fingerprint": 0.0,
+              "semantic": 0.624890148639679,
+              "matched_terms": [
+                "concerts",
+                "london",
+                "chamber",
+                "union",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0020",
+              "grade": 0,
+              "judged": true,
+              "score": 0.6203382015228271,
+              "lexical": 0.22506358740670976,
+              "fingerprint": 0.0,
+              "semantic": 0.6203382015228271,
+              "matched_terms": [
+                "concerts",
+                "monday",
+                "chamber",
+                "union",
+                "popular",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R05",
+          "query": "Wagner's recurring themes associated with characters or ideas in a music drama",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 0.8,
+            "recall": 0.5,
+            "ndcg": 0.4383393028150949
+          },
+          "retrieval_ms": 50.03230000147596,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0249",
+              "grade": 3
+            },
+            {
+              "id": "pg5724-0447",
+              "grade": 2
+            },
+            {
+              "id": "pg5724-0441",
+              "grade": 1
+            },
+            {
+              "id": "pg5724-0448",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg5724-0307",
+              "grade": 2,
+              "judged": true,
+              "score": 0.7122358083724976,
+              "lexical": 0.14214931373843803,
+              "fingerprint": 0.0,
+              "semantic": 0.7122358083724976,
+              "matched_terms": [
+                "themes",
+                "wagner's",
+                "drama",
+                "with",
+                "a",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1,
+              "judged": true,
+              "score": 0.6980218291282654,
+              "lexical": 0.10217458708404319,
+              "fingerprint": 0.0,
+              "semantic": 0.6980218291282654,
+              "matched_terms": [
+                "drama",
+                "wagner's",
+                "music",
+                "with",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0247",
+              "grade": 1,
+              "judged": true,
+              "score": 0.6789105534553528,
+              "lexical": 0.13776627026698812,
+              "fingerprint": 0.0,
+              "semantic": 0.6789105534553528,
+              "matched_terms": [
+                "wagner's",
+                "drama",
+                "ideas",
+                "or",
+                "music",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0305",
+              "grade": 0,
+              "judged": true,
+              "score": 0.6756607294082642,
+              "lexical": 0.07146183597096525,
+              "fingerprint": 0.0,
+              "semantic": 0.6756607294082642,
+              "matched_terms": [
+                "wagner's",
+                "music",
+                "a",
+                "with",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0250",
+              "grade": 2,
+              "judged": true,
+              "score": 0.6717672348022461,
+              "lexical": 0.03562962164810743,
+              "fingerprint": 0.0,
+              "semantic": 0.6717672348022461,
+              "matched_terms": [
+                "drama",
+                "music",
+                "with",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R06",
+          "query": "New York Philharmonic seating plan first violins double basses",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "ndcg": 0.7075263984167216
+          },
+          "retrieval_ms": 43.67360001197085,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg17474-0081",
+              "grade": 1,
+              "judged": true,
+              "score": 0.6001381874084473,
+              "lexical": 0.15292732617532953,
+              "fingerprint": 0.0,
+              "semantic": 0.6001381874084473,
+              "matched_terms": [
+                "violins",
+                "basses",
+                "philharmonic",
+                "double",
+                "york",
+                "new",
+                "first"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0076",
+              "grade": 3,
+              "judged": true,
+              "score": 0.5683540105819702,
+              "lexical": 0.2531936236368003,
+              "fingerprint": 0.0,
+              "semantic": 0.5683540105819702,
+              "matched_terms": [
+                "philharmonic",
+                "plan",
+                "seating",
+                "york",
+                "new"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0083",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5486811995506287,
+              "lexical": 0.07955493830671122,
+              "fingerprint": 0.0,
+              "semantic": 0.5486811995506287,
+              "matched_terms": [
+                "violins",
+                "double",
+                "first"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0077",
+              "grade": 3,
+              "judged": true,
+              "score": 0.5360993146896362,
+              "lexical": 0.10047230993661796,
+              "fingerprint": 0.0,
+              "semantic": 0.5360993146896362,
+              "matched_terms": [
+                "basses",
+                "violins",
+                "double"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0234",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5082991719245911,
+              "lexical": 0.11594613295665646,
+              "fingerprint": 0.0,
+              "semantic": 0.5082991719245911,
+              "matched_terms": [
+                "basses",
+                "double",
+                "violins"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R07",
+          "query": "The recitatives which they wrote had the fluency of spoken words and were not retarded by melodic forms",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 51.864500041119754,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0218",
+              "grade": 3
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg17474-0217",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5993647575378418,
+              "lexical": 0.10840069731893436,
+              "fingerprint": 0.0,
+              "semantic": 0.5993647575378418,
+              "matched_terms": [
+                "recitatives",
+                "they",
+                "words",
+                "were",
+                "the",
+                "which",
+                "of",
+                "and"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0002",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5858030915260315,
+              "lexical": 0.03000640549572232,
+              "fingerprint": 0.0,
+              "semantic": 0.5858030915260315,
+              "matched_terms": [
+                "not",
+                "the",
+                "they",
+                "by",
+                "of",
+                "and",
+                "which"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0199",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5684516429901123,
+              "lexical": 0.053223285540611856,
+              "fingerprint": 0.0,
+              "semantic": 0.5684516429901123,
+              "matched_terms": [
+                "forms",
+                "they",
+                "the",
+                "which",
+                "had",
+                "of",
+                "and"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0276",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5675441026687622,
+              "lexical": 0.06909007871494374,
+              "fingerprint": 0.0,
+              "semantic": 0.5675441026687622,
+              "matched_terms": [
+                "melodic",
+                "the",
+                "not",
+                "they",
+                "were",
+                "which",
+                "of",
+                "by"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0237",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5653573870658875,
+              "lexical": 0.03235020357140435,
+              "fingerprint": 0.0,
+              "semantic": 0.5653573870658875,
+              "matched_terms": [
+                "they",
+                "the",
+                "not",
+                "of",
+                "and",
+                "which"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R08",
+          "query": "Only the music as Leoni sang it prompted his own song",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 53.18799999076873,
+          "missing_relevant": [
+            {
+              "id": "pg18444-0041",
+              "grade": 3
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg18444-0040",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5769660472869873,
+              "lexical": 0.18790803583259272,
+              "fingerprint": 0.0,
+              "semantic": 0.5769660472869873,
+              "matched_terms": [
+                "leoni",
+                "song",
+                "only",
+                "his",
+                "it",
+                "the",
+                "as"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0012",
+              "grade": 0,
+              "judged": true,
+              "score": 0.4888552725315094,
+              "lexical": 0.028386640712299592,
+              "fingerprint": 0.0,
+              "semantic": 0.4888552725315094,
+              "matched_terms": [
+                "music",
+                "as",
+                "the",
+                "his",
+                "it"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0241",
+              "grade": 0,
+              "judged": true,
+              "score": 0.455651193857193,
+              "lexical": 0.05624432656339092,
+              "fingerprint": 0.0,
+              "semantic": 0.455651193857193,
+              "matched_terms": [
+                "sang",
+                "song",
+                "as",
+                "the",
+                "his",
+                "music",
+                "it"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0572",
+              "grade": 0,
+              "judged": true,
+              "score": 0.4534730613231659,
+              "lexical": 0.014832989003868235,
+              "fingerprint": 0.0,
+              "semantic": 0.4534730613231659,
+              "matched_terms": [
+                "as",
+                "the",
+                "his"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0139",
+              "grade": 0,
+              "judged": true,
+              "score": 0.4460543394088745,
+              "lexical": 0.03977492903422181,
+              "fingerprint": 0.0,
+              "semantic": 0.4460543394088745,
+              "matched_terms": [
+                "song",
+                "only",
+                "his",
+                "the",
+                "music",
+                "it"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R09",
+          "query": "the finest of all his many illustrations of the principle of fundamental or typical phrases in dramatic music",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "ndcg": 0.0
+          },
+          "retrieval_ms": 54.33090002043173,
+          "missing_relevant": [
+            {
+              "id": "pg5724-0428",
+              "grade": 3
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg17474-0248",
+              "grade": 0,
+              "judged": true,
+              "score": 0.6257903575897217,
+              "lexical": 0.10191154731385511,
+              "fingerprint": 0.0,
+              "semantic": 0.6257903575897217,
+              "matched_terms": [
+                "principle",
+                "dramatic",
+                "the",
+                "all",
+                "of",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0058",
+              "grade": 0,
+              "judged": false,
+              "score": 0.606616735458374,
+              "lexical": 0.033751544713516796,
+              "fingerprint": 0.0,
+              "semantic": 0.606616735458374,
+              "matched_terms": [
+                "or",
+                "of",
+                "the",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0063",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5933161973953247,
+              "lexical": 0.0445682925584681,
+              "fingerprint": 0.0,
+              "semantic": 0.5933161973953247,
+              "matched_terms": [
+                "dramatic",
+                "of",
+                "the",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0002",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5866037607192993,
+              "lexical": 0.1381177571421378,
+              "fingerprint": 0.0,
+              "semantic": 0.5866037607192993,
+              "matched_terms": [
+                "fundamental",
+                "principle",
+                "phrases",
+                "of",
+                "the",
+                "music",
+                "all",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0053",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5843586325645447,
+              "lexical": 0.04132427736706594,
+              "fingerprint": 0.0,
+              "semantic": 0.5843586325645447,
+              "matched_terms": [
+                "of",
+                "or",
+                "the",
+                "music",
+                "his",
+                "in"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R10",
+          "query": "the musical critic of The Times newspaper then decided to try a series of good chamber music concerts",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 56.360899994615465,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg70203-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 0.6512772440910339,
+              "lexical": 0.37024287966517794,
+              "fingerprint": 1.0,
+              "semantic": 0.6512772440910339,
+              "matched_terms": [
+                "series",
+                "concerts",
+                "newspaper",
+                "try",
+                "decided",
+                "times",
+                "chamber",
+                "critic"
+              ],
+              "matched_phrase": "critic of _The Times_ newspaper"
+            },
+            {
+              "id": "pg28056-0279",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5615764856338501,
+              "lexical": 0.027316053455061114,
+              "fingerprint": 0.0,
+              "semantic": 0.5615764856338501,
+              "matched_terms": [
+                "musical",
+                "the",
+                "of",
+                "a",
+                "music",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0297",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5389508008956909,
+              "lexical": 0.05205569420582629,
+              "fingerprint": 0.0,
+              "semantic": 0.5389508008956909,
+              "matched_terms": [
+                "critic",
+                "the",
+                "of",
+                "music",
+                "a",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0298",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5270302295684814,
+              "lexical": 0.1278764646897314,
+              "fingerprint": 0.0,
+              "semantic": 0.5270302295684814,
+              "matched_terms": [
+                "critic",
+                "newspaper",
+                "the",
+                "of",
+                "music",
+                "to",
+                "musical",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0039",
+              "grade": 0,
+              "judged": true,
+              "score": 0.5231710076332092,
+              "lexical": 0.12206003540842685,
+              "fingerprint": 0.0,
+              "semantic": 0.5231710076332092,
+              "matched_terms": [
+                "concerts",
+                "chamber",
+                "then",
+                "musical",
+                "of",
+                "the",
+                "music",
+                "a"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "k": 5,
+      "query_count": 10,
+      "macro": {
+        "precision": 0.58,
+        "recall": 0.8125,
+        "ndcg": 0.8949026754848346
+      },
+      "timing": {
+        "retrieval_seconds": 0.5530092000844888,
+        "median_query_ms": 56.38850000104867
+      },
+      "categories": {
+        "paraphrase": {
+          "query_count": 3,
+          "precision": 1.0,
+          "recall": 0.5601851851851852,
+          "ndcg": 0.7268798059738517
+        },
+        "quotation": {
+          "query_count": 4,
+          "precision": 0.2,
+          "recall": 1.0,
+          "ndcg": 1.0
+        },
+        "terms": {
+          "query_count": 3,
+          "precision": 0.6666666666666666,
+          "recall": 0.8148148148148148,
+          "ndcg": 0.9227957789755968
+        }
+      },
+      "queries": [
+        {
+          "id": "R01",
+          "query": "how recitative carries the story while an aria gives expression to feeling",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "ndcg": 0.9107964694528201
+          },
+          "retrieval_ms": 57.61929997242987,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0234",
+              "grade": 2
+            },
+            {
+              "id": "pg17474-0229",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0230",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0232",
+              "grade": 1
+            },
+            {
+              "id": "pg17474-0249",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg17474-0227",
+              "grade": 3,
+              "judged": true,
+              "score": 0.2836628333044536,
+              "lexical": 0.18763791528288679,
+              "fingerprint": 0.0,
+              "semantic": 0.5692164897918701,
+              "matched_terms": [
+                "recitative",
+                "aria",
+                "how",
+                "the",
+                "an",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0233",
+              "grade": 2,
+              "judged": true,
+              "score": 0.2650993074191401,
+              "lexical": 0.16202355650018535,
+              "fingerprint": 0.0,
+              "semantic": 0.5491105914115906,
+              "matched_terms": [
+                "aria",
+                "carries",
+                "recitative",
+                "how",
+                "an",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1,
+              "judged": true,
+              "score": 0.2528981945248547,
+              "lexical": 0.09092578431679202,
+              "fingerprint": 0.0,
+              "semantic": 0.6056616902351379,
+              "matched_terms": [
+                "recitative",
+                "expression",
+                "how",
+                "to",
+                "the",
+                "an"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0061",
+              "grade": 1,
+              "judged": true,
+              "score": 0.2527538059869073,
+              "lexical": 0.11723691859039163,
+              "fingerprint": 0.0,
+              "semantic": 0.5714205503463745,
+              "matched_terms": [
+                "aria",
+                "gives",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0228",
+              "grade": 1,
+              "judged": true,
+              "score": 0.24667839248863074,
+              "lexical": 0.1208641824873998,
+              "fingerprint": 0.0,
+              "semantic": 0.5493986010551453,
+              "matched_terms": [
+                "recitative",
+                "expression",
+                "an",
+                "how",
+                "the",
+                "to"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R02",
+          "query": "Blind Tom reproducing a piece at the piano after hearing it once",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.5555555555555556,
+            "ndcg": 0.7885664228048384
+          },
+          "retrieval_ms": 57.957399985753,
+          "missing_relevant": [
+            {
+              "id": "pg28056-0237",
+              "grade": 3
+            },
+            {
+              "id": "pg28056-0228",
+              "grade": 2
+            },
+            {
+              "id": "pg28056-0243",
+              "grade": 2
+            },
+            {
+              "id": "pg28056-0246",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg28056-0247",
+              "grade": 3,
+              "judged": true,
+              "score": 0.3148000128648421,
+              "lexical": 0.22542790076947672,
+              "fingerprint": 0.0,
+              "semantic": 0.6095927357673645,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "piece",
+                "once",
+                "piano",
+                "the",
+                "at",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0244",
+              "grade": 3,
+              "judged": true,
+              "score": 0.3078396927498804,
+              "lexical": 0.21452703987735872,
+              "fingerprint": 0.0,
+              "semantic": 0.6037214994430542,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "piece",
+                "hearing",
+                "piano",
+                "at",
+                "it",
+                "the"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0231",
+              "grade": 1,
+              "judged": true,
+              "score": 0.30551041376977955,
+              "lexical": 0.2048303818788748,
+              "fingerprint": 0.0,
+              "semantic": 0.6095335483551025,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "hearing",
+                "after",
+                "it",
+                "the",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0236",
+              "grade": 1,
+              "judged": true,
+              "score": 0.3033257885813896,
+              "lexical": 0.1618814962970292,
+              "fingerprint": 0.0,
+              "semantic": 0.658511757850647,
+              "matched_terms": [
+                "tom",
+                "blind",
+                "hearing",
+                "the",
+                "it",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0248",
+              "grade": 3,
+              "judged": true,
+              "score": 0.293907023698689,
+              "lexical": 0.13472218255334753,
+              "fingerprint": 0.0,
+              "semantic": 0.6665201187133789,
+              "matched_terms": [
+                "blind",
+                "tom",
+                "piece",
+                "it",
+                "the",
+                "a"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R03",
+          "query": "Leoni Meyer Lyon Yigdal Thomas Olivers",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "ndcg": 0.9879538239787087
+          },
+          "retrieval_ms": 45.10410001967102,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg18444-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 0.34501464413289207,
+              "lexical": 0.4237513751163301,
+              "fingerprint": 0.0,
+              "semantic": 0.4409329295158386,
+              "matched_terms": [
+                "yigdal",
+                "leoni",
+                "lyon",
+                "olivers",
+                "meyer"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0041",
+              "grade": 2,
+              "judged": true,
+              "score": 0.16153877212577744,
+              "lexical": 0.12684901519999867,
+              "fingerprint": 0.0,
+              "semantic": 0.29844775795936584,
+              "matched_terms": [
+                "yigdal",
+                "leoni"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0135",
+              "grade": 0,
+              "judged": true,
+              "score": 0.14643671065568922,
+              "lexical": 0,
+              "fingerprint": 0.0,
+              "semantic": 0.4183906018733978,
+              "matched_terms": [],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0653",
+              "grade": 0,
+              "judged": true,
+              "score": 0.1417028615049574,
+              "lexical": 0.042376656040450635,
+              "fingerprint": 0.0,
+              "semantic": 0.3503810465335846,
+              "matched_terms": [
+                "olivers",
+                "thomas"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg18444-0038",
+              "grade": 1,
+              "judged": true,
+              "score": 0.13595041538380154,
+              "lexical": 0.06649260510123588,
+              "fingerprint": 0.0,
+              "semantic": 0.3029392659664154,
+              "matched_terms": [
+                "olivers",
+                "thomas"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R04",
+          "query": "London Musical Union Monday Popular Concerts chamber music",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.8,
+            "recall": 0.4444444444444444,
+            "ndcg": 0.8463570623049702
+          },
+          "retrieval_ms": 48.502599995117635,
+          "missing_relevant": [
+            {
+              "id": "pg70203-0040",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0041",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0043",
+              "grade": 2
+            },
+            {
+              "id": "pg70203-0042",
+              "grade": 1
+            },
+            {
+              "id": "pg70203-0044",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg70203-0039",
+              "grade": 3,
+              "judged": true,
+              "score": 0.34058937781303766,
+              "lexical": 0.2867646825147921,
+              "fingerprint": 0.0,
+              "semantic": 0.6044150590896606,
+              "matched_terms": [
+                "monday",
+                "concerts",
+                "popular",
+                "chamber",
+                "london",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0037",
+              "grade": 3,
+              "judged": true,
+              "score": 0.32213975402635564,
+              "lexical": 0.22165161178999981,
+              "fingerprint": 0.0,
+              "semantic": 0.6354186534881592,
+              "matched_terms": [
+                "union",
+                "concerts",
+                "london",
+                "chamber",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0020",
+              "grade": 0,
+              "judged": true,
+              "score": 0.31839698486600887,
+              "lexical": 0.22506358740670976,
+              "fingerprint": 0.0,
+              "semantic": 0.6203382015228271,
+              "matched_terms": [
+                "concerts",
+                "monday",
+                "chamber",
+                "union",
+                "popular",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0036",
+              "grade": 1,
+              "judged": true,
+              "score": 0.3140834958542854,
+              "lexical": 0.17500501897367518,
+              "fingerprint": 0.0,
+              "semantic": 0.672374963760376,
+              "matched_terms": [
+                "concerts",
+                "london",
+                "union",
+                "chamber",
+                "music",
+                "musical"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0038",
+              "grade": 2,
+              "judged": true,
+              "score": 0.30860085968400375,
+              "lexical": 0.1649113470586436,
+              "fingerprint": 0.0,
+              "semantic": 0.6696878671646118,
+              "matched_terms": [
+                "concerts",
+                "union",
+                "chamber",
+                "london",
+                "musical",
+                "music"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R05",
+          "query": "Wagner's recurring themes associated with characters or ideas in a music drama",
+          "category": "paraphrase",
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.625,
+            "ndcg": 0.4812765256638966
+          },
+          "retrieval_ms": 55.15770002966747,
+          "missing_relevant": [
+            {
+              "id": "pg17474-0249",
+              "grade": 3
+            },
+            {
+              "id": "pg17474-0250",
+              "grade": 2
+            },
+            {
+              "id": "pg5724-0448",
+              "grade": 1
+            }
+          ],
+          "ranked": [
+            {
+              "id": "pg5724-0307",
+              "grade": 2,
+              "judged": true,
+              "score": 0.31324972411267127,
+              "lexical": 0.14214931373843803,
+              "fingerprint": 0.0,
+              "semantic": 0.7122358083724976,
+              "matched_terms": [
+                "themes",
+                "wagner's",
+                "drama",
+                "with",
+                "a",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0247",
+              "grade": 1,
+              "judged": true,
+              "score": 0.29961351532951813,
+              "lexical": 0.13776627026698812,
+              "fingerprint": 0.0,
+              "semantic": 0.6789105534553528,
+              "matched_terms": [
+                "wagner's",
+                "drama",
+                "ideas",
+                "or",
+                "music",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 1,
+              "judged": true,
+              "score": 0.2902862043827123,
+              "lexical": 0.10217458708404319,
+              "fingerprint": 0.0,
+              "semantic": 0.6980218291282654,
+              "matched_terms": [
+                "drama",
+                "wagner's",
+                "music",
+                "with",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0447",
+              "grade": 2,
+              "judged": true,
+              "score": 0.2747848659469462,
+              "lexical": 0.1630717051721892,
+              "fingerprint": 0.0,
+              "semantic": 0.575435996055603,
+              "matched_terms": [
+                "themes",
+                "associated",
+                "ideas",
+                "wagner's",
+                "with",
+                "in",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg5724-0441",
+              "grade": 1,
+              "judged": true,
+              "score": 0.2719293344045895,
+              "lexical": 0.09836350282589992,
+              "fingerprint": 0.0,
+              "semantic": 0.6504735946655273,
+              "matched_terms": [
+                "wagner's",
+                "drama",
+                "a",
+                "in"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R06",
+          "query": "New York Philharmonic seating plan first violins double basses",
+          "category": "terms",
+          "metrics": {
+            "precision": 0.6,
+            "recall": 1.0,
+            "ndcg": 0.9340764506431116
+          },
+          "retrieval_ms": 53.463100048247725,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg17474-0076",
+              "grade": 3,
+              "judged": true,
+              "score": 0.3128610343402497,
+              "lexical": 0.2531936236368003,
+              "fingerprint": 0.0,
+              "semantic": 0.5683540105819702,
+              "matched_terms": [
+                "philharmonic",
+                "plan",
+                "seating",
+                "york",
+                "new"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0081",
+              "grade": 1,
+              "judged": true,
+              "score": 0.27886566237185484,
+              "lexical": 0.15292732617532953,
+              "fingerprint": 0.0,
+              "semantic": 0.6001381874084473,
+              "matched_terms": [
+                "violins",
+                "basses",
+                "philharmonic",
+                "double",
+                "york",
+                "new",
+                "first"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0077",
+              "grade": 3,
+              "judged": true,
+              "score": 0.23284729961285075,
+              "lexical": 0.10047230993661796,
+              "fingerprint": 0.0,
+              "semantic": 0.5360993146896362,
+              "matched_terms": [
+                "basses",
+                "violins",
+                "double"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0234",
+              "grade": 0,
+              "judged": true,
+              "score": 0.23008047000410228,
+              "lexical": 0.11594613295665646,
+              "fingerprint": 0.0,
+              "semantic": 0.5082991719245911,
+              "matched_terms": [
+                "basses",
+                "double",
+                "violins"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0090",
+              "grade": 0,
+              "judged": true,
+              "score": 0.22849025934951817,
+              "lexical": 0.19237111806907725,
+              "fingerprint": 0.0,
+              "semantic": 0.4054950177669525,
+              "matched_terms": [
+                "basses",
+                "violins",
+                "double"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R07",
+          "query": "The recitatives which they wrote had the fluency of spoken words and were not retarded by melodic forms",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 63.02000000141561,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg17474-0218",
+              "grade": 3,
+              "judged": true,
+              "score": 0.5390096972787399,
+              "lexical": 0.3346916327661982,
+              "fingerprint": 1.0,
+              "semantic": 0.5382813215255737,
+              "matched_terms": [
+                "retarded",
+                "fluency",
+                "recitatives",
+                "melodic",
+                "spoken",
+                "forms",
+                "wrote",
+                "words"
+              ],
+              "matched_phrase": "which they wrote had the"
+            },
+            {
+              "id": "pg17474-0217",
+              "grade": 0,
+              "judged": true,
+              "score": 0.2585579789317651,
+              "lexical": 0.10840069731893436,
+              "fingerprint": 0.0,
+              "semantic": 0.5993647575378418,
+              "matched_terms": [
+                "recitatives",
+                "they",
+                "words",
+                "were",
+                "the",
+                "which",
+                "of",
+                "and"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0276",
+              "grade": 0,
+              "judged": true,
+              "score": 0.22973097135579146,
+              "lexical": 0.06909007871494374,
+              "fingerprint": 0.0,
+              "semantic": 0.5675441026687622,
+              "matched_terms": [
+                "melodic",
+                "the",
+                "not",
+                "they",
+                "were",
+                "which",
+                "of",
+                "by"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0199",
+              "grade": 0,
+              "judged": true,
+              "score": 0.22290855353981462,
+              "lexical": 0.053223285540611856,
+              "fingerprint": 0.0,
+              "semantic": 0.5684516429901123,
+              "matched_terms": [
+                "forms",
+                "they",
+                "the",
+                "which",
+                "had",
+                "of",
+                "and"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0287",
+              "grade": 0,
+              "judged": true,
+              "score": 0.21865593272940387,
+              "lexical": 0.10348385745719786,
+              "fingerprint": 0.0,
+              "semantic": 0.4916805624961853,
+              "matched_terms": [
+                "recitatives",
+                "words",
+                "the",
+                "were",
+                "had",
+                "by",
+                "which",
+                "not"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R08",
+          "query": "Only the music as Leoni sang it prompted his own song",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 52.35810001613572,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg18444-0041",
+              "grade": 3,
+              "judged": true,
+              "score": 0.45392238268087803,
+              "lexical": 0.24673525644299052,
+              "fingerprint": 1.0,
+              "semantic": 0.4082614779472351,
+              "matched_terms": [
+                "leoni",
+                "prompted",
+                "sang",
+                "song",
+                "own",
+                "only",
+                "it",
+                "the"
+              ],
+              "matched_phrase": "Only the music as Leoni"
+            },
+            {
+              "id": "pg18444-0040",
+              "grade": 0,
+              "judged": true,
+              "score": 0.2864967326751123,
+              "lexical": 0.18790803583259272,
+              "fingerprint": 0.0,
+              "semantic": 0.5769660472869873,
+              "matched_terms": [
+                "leoni",
+                "song",
+                "only",
+                "his",
+                "it",
+                "the",
+                "as"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg28056-0413",
+              "grade": 0,
+              "judged": true,
+              "score": 0.18542958376897972,
+              "lexical": 0.06705541142917563,
+              "fingerprint": 0.0,
+              "semantic": 0.44358471035957336,
+              "matched_terms": [
+                "sang",
+                "own",
+                "the",
+                "as",
+                "it",
+                "his",
+                "music"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0241",
+              "grade": 0,
+              "judged": true,
+              "score": 0.18478786480354345,
+              "lexical": 0.05624432656339092,
+              "fingerprint": 0.0,
+              "semantic": 0.455651193857193,
+              "matched_terms": [
+                "sang",
+                "song",
+                "as",
+                "the",
+                "his",
+                "music",
+                "it"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0012",
+              "grade": 0,
+              "judged": true,
+              "score": 0.18387333370656309,
+              "lexical": 0.028386640712299592,
+              "fingerprint": 0.0,
+              "semantic": 0.4888552725315094,
+              "matched_terms": [
+                "music",
+                "as",
+                "the",
+                "his",
+                "it"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R09",
+          "query": "the finest of all his many illustrations of the principle of fundamental or typical phrases in dramatic music",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 60.11650001164526,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg5724-0428",
+              "grade": 3,
+              "judged": true,
+              "score": 0.452495135273009,
+              "lexical": 0.26770462240437554,
+              "fingerprint": 1.0,
+              "semantic": 0.37722301483154297,
+              "matched_terms": [
+                "illustrations",
+                "typical",
+                "fundamental",
+                "principle",
+                "phrases",
+                "dramatic",
+                "finest",
+                "many"
+              ],
+              "matched_phrase": "the finest of all his"
+            },
+            {
+              "id": "pg17474-0249",
+              "grade": 0,
+              "judged": true,
+              "score": 0.28120261525177925,
+              "lexical": 0.19475913257651792,
+              "fingerprint": 0.0,
+              "semantic": 0.5530314445495605,
+              "matched_terms": [
+                "phrases",
+                "typical",
+                "of",
+                "the",
+                "or",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0002",
+              "grade": 0,
+              "judged": true,
+              "score": 0.26746430696571677,
+              "lexical": 0.1381177571421378,
+              "fingerprint": 0.0,
+              "semantic": 0.5866037607192993,
+              "matched_terms": [
+                "fundamental",
+                "principle",
+                "phrases",
+                "of",
+                "the",
+                "music",
+                "all",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0248",
+              "grade": 0,
+              "judged": true,
+              "score": 0.26488682144763737,
+              "lexical": 0.10191154731385511,
+              "fingerprint": 0.0,
+              "semantic": 0.6257903575897217,
+              "matched_terms": [
+                "principle",
+                "dramatic",
+                "the",
+                "all",
+                "of",
+                "music",
+                "in"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg17474-0030",
+              "grade": 0,
+              "judged": true,
+              "score": 0.2564421302584692,
+              "lexical": 0.18853068826549238,
+              "fingerprint": 0.0,
+              "semantic": 0.4902952015399933,
+              "matched_terms": [
+                "principle",
+                "phrases",
+                "fundamental",
+                "many",
+                "of",
+                "the",
+                "all",
+                "music"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        },
+        {
+          "id": "R10",
+          "query": "the musical critic of The Times newspaper then decided to try a series of good chamber music concerts",
+          "category": "quotation",
+          "metrics": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "ndcg": 1.0
+          },
+          "retrieval_ms": 59.71040000440553,
+          "missing_relevant": [],
+          "ranked": [
+            {
+              "id": "pg70203-0040",
+              "grade": 3,
+              "judged": true,
+              "score": 0.5945563312811919,
+              "lexical": 0.37024287966517794,
+              "fingerprint": 1.0,
+              "semantic": 0.6512772440910339,
+              "matched_terms": [
+                "series",
+                "concerts",
+                "newspaper",
+                "try",
+                "decided",
+                "times",
+                "chamber",
+                "critic"
+              ],
+              "matched_phrase": "critic of _The Times_ newspaper"
+            },
+            {
+              "id": "pg17474-0298",
+              "grade": 0,
+              "judged": true,
+              "score": 0.24200498945934765,
+              "lexical": 0.1278764646897314,
+              "fingerprint": 0.0,
+              "semantic": 0.5270302295684814,
+              "matched_terms": [
+                "critic",
+                "newspaper",
+                "the",
+                "of",
+                "music",
+                "to",
+                "musical",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0039",
+              "grade": 0,
+              "judged": true,
+              "score": 0.23803686860541529,
+              "lexical": 0.12206003540842685,
+              "fingerprint": 0.0,
+              "semantic": 0.5231710076332092,
+              "matched_terms": [
+                "concerts",
+                "chamber",
+                "then",
+                "musical",
+                "of",
+                "the",
+                "music",
+                "a"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0037",
+              "grade": 0,
+              "judged": true,
+              "score": 0.23464739288900424,
+              "lexical": 0.13809308996938183,
+              "fingerprint": 0.0,
+              "semantic": 0.49287286400794983,
+              "matched_terms": [
+                "concerts",
+                "series",
+                "chamber",
+                "musical",
+                "the",
+                "of",
+                "music",
+                "to"
+              ],
+              "matched_phrase": ""
+            },
+            {
+              "id": "pg70203-0044",
+              "grade": 0,
+              "judged": true,
+              "score": 0.23194978611243866,
+              "lexical": 0.14331885679061995,
+              "fingerprint": 0.0,
+              "semantic": 0.4784465730190277,
+              "matched_terms": [
+                "concerts",
+                "series",
+                "chamber",
+                "good",
+                "musical",
+                "the",
+                "music",
+                "of"
+              ],
+              "matched_phrase": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

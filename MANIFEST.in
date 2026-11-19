@@ -1,0 +1,7 @@
+include .gitattributes .gitignore CHANGELOG.md DEMO.md DESIGN.md ERROR_ANALYSIS.md PORTFOLIO_OVERVIEW.md RESULTS.md TECHNICAL_REPORT.md
+include requirements.txt
+include data/README.md data/GUTENBERG_LICENSE.txt data/*.json
+include docs/*.md
+include scripts/*.py
+include tests/*.py
+include demo/frame_*.png demo/musegraph_demo.mp4

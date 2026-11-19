@@ -1,0 +1,6 @@
+# Direct dependencies verified for the complete application, test, and demo workflow.
+Flask==3.1.3
+sentence-transformers==5.7.0
+pytest==9.2.0
+playwright==1.65.2
+imageio-ffmpeg==0.8.1

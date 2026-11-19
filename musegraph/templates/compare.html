@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Compare passages · MuseGraph{% endblock %}
+{% block content %}
+<h1>Compare passages</h1>
+<p>Find shared word sequences after normalizing capitalization and punctuation.</p>
+{% if error %}<p class="notice" role="alert">{{ error }}</p>{% endif %}
+<form method="post" class="panel">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <div class="pair">
+    <div><label for="left">First passage</label><textarea id="left" name="left" rows="9" maxlength="{{ limit }}" required>{{ left }}</textarea></div>
+    <div><label for="right">Second passage</label><textarea id="right" name="right" rows="9" maxlength="{{ limit }}" required>{{ right }}</textarea></div>
+  </div>
+  <button type="submit">Compare</button>
+</form>
+{% if result is not none %}
+<section class="comparison">
+  <h2>Fingerprint overlap</h2>
+  <dl class="signals">
+    <div><dt>Jaccard similarity</dt><dd>{{ '%.1f%%'|format(100 * result.score) }}</dd></div>
+    <div><dt>Shared fingerprints</dt><dd>{{ result.shared }}</dd></div>
+    <div><dt>First passage</dt><dd>{{ result.left_count }}</dd></div>
+    <div><dt>Second passage</dt><dd>{{ result.right_count }}</dd></div>
+  </dl>
+  {% if result.evidence %}
+  <h3>Shared phrases</h3>
+  <div class="pair evidence-head" aria-hidden="true"><span>First passage</span><span>Second passage</span></div>
+  <ol class="matches">
+    {% for left_span, right_span in result.evidence %}
+    <li class="pair">
+      <div aria-label="First passage"><mark>{{ left[left_span.start:left_span.end] }}</mark><small>Characters {{ left_span.start + 1 }}–{{ left_span.end }}</small></div>
+      <div aria-label="Second passage"><mark>{{ right[right_span.start:right_span.end] }}</mark><small>Characters {{ right_span.start + 1 }}–{{ right_span.end }}</small></div>
+    </li>
+    {% endfor %}
+  </ol>
+  {% if result.shared > result.evidence|length %}<p class="muted">Showing the first {{ result.evidence|length }} shared fingerprints.</p>{% endif %}
+  {% else %}
+  <p>The passages have no shared selected fingerprints. Try a longer pair if either passage contains fewer than eight words.</p>
+  {% endif %}
+</section>
+{% endif %}
+{% endblock %}

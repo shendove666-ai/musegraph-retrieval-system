@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Search music literature</h1>
+  <p>Find passages by topic or quotation and inspect the evidence behind each match.</p>
+</section>
+{% if count %}
+<form method="post" action="{{ url_for('web.search') }}" class="panel">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label for="query">Topic or quotation</label>
+  <input id="query" name="q" type="search" required maxlength="{{ query_limit }}" placeholder="Try London chamber music or a quotation">
+  <div class="controls">
+    <div>
+      <label for="mode">Retrieval mode</label>
+      <select id="mode" name="mode">
+        {% for key, label in modes.items() %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
+      </select>
+    </div>
+    <button type="submit">Search</button>
+  </div>
+</form>
+<p class="muted">{{ count }} indexed passages</p>
+{% else %}
+<section class="panel">
+  <h2>The corpus is empty</h2>
+  <p>Run <code>musegraph init-db</code> in the terminal, then reload this page.</p>
+</section>
+{% endif %}
+{% endblock %}

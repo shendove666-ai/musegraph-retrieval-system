@@ -1,0 +1,171 @@
+[
+  {
+    "id": "R01",
+    "category": "paraphrase",
+    "query": "how recitative carries the story while an aria gives expression to feeling",
+    "grades": {
+      "pg17474-0007": 0,
+      "pg17474-0227": 3,
+      "pg17474-0228": 1,
+      "pg17474-0229": 1,
+      "pg17474-0230": 1,
+      "pg17474-0232": 1,
+      "pg17474-0233": 2,
+      "pg17474-0234": 2,
+      "pg17474-0248": 1,
+      "pg17474-0249": 1,
+      "pg28056-0009": 0,
+      "pg5724-0061": 1
+    }
+  },
+  {
+    "id": "R02",
+    "category": "paraphrase",
+    "query": "Blind Tom reproducing a piece at the piano after hearing it once",
+    "grades": {
+      "pg28056-0225": 0,
+      "pg28056-0228": 2,
+      "pg28056-0231": 1,
+      "pg28056-0236": 1,
+      "pg28056-0237": 3,
+      "pg28056-0239": 0,
+      "pg28056-0243": 2,
+      "pg28056-0244": 3,
+      "pg28056-0246": 1,
+      "pg28056-0247": 3,
+      "pg28056-0248": 3
+    }
+  },
+  {
+    "id": "R03",
+    "category": "terms",
+    "query": "Leoni Meyer Lyon Yigdal Thomas Olivers",
+    "grades": {
+      "pg18444-0038": 1,
+      "pg18444-0040": 3,
+      "pg18444-0041": 2,
+      "pg18444-0600": 0,
+      "pg18444-0651": 0,
+      "pg18444-0653": 0,
+      "pg28056-0134": 0,
+      "pg28056-0135": 0,
+      "pg28056-0539": 0,
+      "pg70203-0236": 0
+    }
+  },
+  {
+    "id": "R04",
+    "category": "terms",
+    "query": "London Musical Union Monday Popular Concerts chamber music",
+    "grades": {
+      "pg70203-0009": 0,
+      "pg70203-0020": 0,
+      "pg70203-0036": 1,
+      "pg70203-0037": 3,
+      "pg70203-0038": 2,
+      "pg70203-0039": 3,
+      "pg70203-0040": 2,
+      "pg70203-0041": 2,
+      "pg70203-0042": 1,
+      "pg70203-0043": 2,
+      "pg70203-0044": 1
+    }
+  },
+  {
+    "id": "R05",
+    "category": "paraphrase",
+    "query": "Wagner's recurring themes associated with characters or ideas in a music drama",
+    "grades": {
+      "pg17474-0247": 1,
+      "pg17474-0248": 1,
+      "pg17474-0249": 3,
+      "pg17474-0250": 2,
+      "pg17474-0305": 0,
+      "pg5724-0307": 2,
+      "pg5724-0322": 0,
+      "pg5724-0441": 1,
+      "pg5724-0447": 2,
+      "pg5724-0448": 1
+    }
+  },
+  {
+    "id": "R06",
+    "category": "terms",
+    "query": "New York Philharmonic seating plan first violins double basses",
+    "grades": {
+      "pg17474-0075": 0,
+      "pg17474-0076": 3,
+      "pg17474-0077": 3,
+      "pg17474-0081": 1,
+      "pg17474-0083": 0,
+      "pg17474-0090": 0,
+      "pg70203-0234": 0
+    }
+  },
+  {
+    "id": "R07",
+    "category": "quotation",
+    "query": "The recitatives which they wrote had the fluency of spoken words and were not retarded by melodic forms",
+    "grades": {
+      "pg17474-0002": 0,
+      "pg17474-0199": 0,
+      "pg17474-0217": 0,
+      "pg17474-0218": 3,
+      "pg17474-0237": 0,
+      "pg17474-0276": 0,
+      "pg17474-0285": 0,
+      "pg17474-0287": 0,
+      "pg5724-0448": 0
+    }
+  },
+  {
+    "id": "R08",
+    "category": "quotation",
+    "query": "Only the music as Leoni sang it prompted his own song",
+    "grades": {
+      "pg17474-0241": 0,
+      "pg18444-0010": 0,
+      "pg18444-0040": 0,
+      "pg18444-0041": 3,
+      "pg18444-0572": 0,
+      "pg28056-0251": 0,
+      "pg28056-0413": 0,
+      "pg5724-0139": 0,
+      "pg5724-0374": 0,
+      "pg70203-0012": 0
+    }
+  },
+  {
+    "id": "R09",
+    "category": "quotation",
+    "query": "the finest of all his many illustrations of the principle of fundamental or typical phrases in dramatic music",
+    "grades": {
+      "pg17474-0002": 0,
+      "pg17474-0030": 0,
+      "pg17474-0053": 0,
+      "pg17474-0063": 0,
+      "pg17474-0157": 0,
+      "pg17474-0248": 0,
+      "pg17474-0249": 0,
+      "pg5724-0192": 0,
+      "pg5724-0428": 3
+    }
+  },
+  {
+    "id": "R10",
+    "category": "quotation",
+    "query": "the musical critic of The Times newspaper then decided to try a series of good chamber music concerts",
+    "grades": {
+      "pg17474-0297": 0,
+      "pg17474-0298": 0,
+      "pg17474-0309": 0,
+      "pg17474-0314": 0,
+      "pg28056-0279": 0,
+      "pg70203-0036": 0,
+      "pg70203-0037": 0,
+      "pg70203-0039": 0,
+      "pg70203-0040": 3,
+      "pg70203-0044": 0
+    }
+  }
+]

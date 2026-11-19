@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Search history · MuseGraph{% endblock %}
+{% block content %}
+<h1>Search history</h1>
+{% if entries %}
+<p class="muted">Up to 50 recent searches from this browser session. Times are UTC.</p>
+<ul class="history-list">
+  {% for entry in entries %}
+  <li>
+    {% if entry.mode in modes %}
+    <a href="{{ url_for('web.search', q=entry.query, mode=entry.mode) }}">{{ entry.query }}</a>
+    {% else %}
+    <span>{{ entry.query }} <small>(mode currently unavailable)</small></span>
+    {% endif %}
+    <span class="muted">{{ modes.get(entry.mode, entry.mode) }} · <time datetime="{{ entry.searched_at }}">{{ entry.searched_at[:16]|replace('T', ' ') }}</time></span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% if session.get('id') %}
+<form method="post" action="{{ url_for('web.clear_history') }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <button class="secondary" type="submit">Clear history and feedback</button>
+</form>
+{% endif %}
+{% if not entries %}
+<p class="notice">No searches recorded for this session. <a href="{{ url_for('web.index') }}">Start a search</a></p>
+{% endif %}
+{% endblock %}

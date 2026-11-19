@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "musegraph-retrieval-system"
+version = "1.2.0"
+description = "Explainable retrieval and passage comparison for music literature"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Mao Wen"}]
+dependencies = ["Flask>=3.1,<4"]
+
+[project.optional-dependencies]
+semantic = ["sentence-transformers>=5.1,<6"]
+test = ["pytest>=8,<10"]
+demo = ["playwright>=1.50,<2", "imageio-ffmpeg>=0.6,<1"]
+
+[project.scripts]
+musegraph = "musegraph.__main__:main"
+
+[tool.setuptools]
+packages = ["musegraph", "musegraph.algorithms", "musegraph.data"]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"musegraph.data" = "data"
+
+[tool.setuptools.package-data]
+musegraph = ["schema.sql", "templates/*.html", "static/*.css"]
+"musegraph.data" = ["real_documents.json", "real_judgments.json", "GUTENBERG_LICENSE.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
