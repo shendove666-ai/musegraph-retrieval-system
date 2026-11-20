@@ -2,7 +2,7 @@
 
 ## Overview
 
-MuseGraph helps readers find a passage in historical music literature when they remember only a name, a phrase, or the gist of an argument. Each result shows why it matched and lets readers open the corresponding edition. I built it to recover a source when I remember a name, a short quotation, or the substance of an argument. The Flask application searches 2,286 passages from five Project Gutenberg books and shows the evidence behind each result.
+MuseGraph helps readers recover passages from historical music literature through custom TF-IDF and Winnowing implementations and a pinned pretrained Sentence-BERT model, with match evidence visible in the interface.
 
 [![Hybrid retrieval result with TF-IDF, Winnowing, and Sentence-BERT evidence](demo/frame_1.png)](demo/musegraph_demo.mp4)
 
@@ -155,7 +155,7 @@ The final two runs used Windows, Python 3.13.17, Sentence Transformers 5.7.0, Py
 
 ## Results and visualizations
 
-On ten queries, Hybrid achieved the highest nDCG@5 of the four modes. It scored 0.895, compared with 0.842 for TF-IDF, on this collection.
+With feedback disabled, Hybrid reached a macro nDCG@5 of 0.8949 versus 0.8417 for TF-IDF across ten queries graded by a single annotator. Recall@5 measures recovery of known relevant passages, with pooled judgments for term and paraphrase queries.
 
 | Mode | Precision@5 | Recall@5 | nDCG@5 |
 | --- | ---: | ---: | ---: |
