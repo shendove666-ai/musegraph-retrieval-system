@@ -1,10 +1,14 @@
 # MuseGraph
 
+[![Tests](https://github.com/shendove666-ai/musegraph-retrieval-system/actions/workflows/tests.yml/badge.svg)](https://github.com/shendove666-ai/musegraph-retrieval-system/actions/workflows/tests.yml)
+
 ## Overview
 
-MuseGraph is an explainable passage retrieval and comparison system for historical music literature. I built it to recover a source when I remember a name, a short quotation, or the substance of an argument. The Flask application searches 2,286 passages from five Project Gutenberg books and shows the evidence behind each result.
+MuseGraph helps readers find a passage in historical music literature when they remember only a name, a phrase, or the gist of an argument. Each result shows why it matched and lets readers open the corresponding edition. I built it to recover a source when I remember a name, a short quotation, or the substance of an argument. The Flask application searches 2,286 passages from five Project Gutenberg books and shows the evidence behind each result.
 
 [![Hybrid retrieval result with TF-IDF, Winnowing, and Sentence-BERT evidence](demo/frame_1.png)](demo/musegraph_demo.mp4)
+
+In this example, the shared phrase helps the reader check a remembered quotation before opening the source edition.
 
 [Watch the local MP4 walkthrough](demo/musegraph_demo.mp4) · [View all screenshots](DEMO.md)
 
@@ -153,6 +157,8 @@ The final two runs used Windows, Python 3.13.17, Sentence Transformers 5.7.0, Py
 
 ## Results and visualizations
 
+On ten queries, Hybrid achieved the highest nDCG@5 of the four modes. It scored 0.895, compared with 0.842 for TF-IDF, on this collection.
+
 | Mode | Precision@5 | Recall@5 | nDCG@5 |
 | --- | ---: | ---: | ---: |
 | TF-IDF | 0.5000 | 0.7456 | 0.8417 |
@@ -160,7 +166,7 @@ The final two runs used Windows, Python 3.13.17, Sentence Transformers 5.7.0, Py
 | Sentence-BERT | 0.4000 | 0.4011 | 0.4209 |
 | **Hybrid with Sentence-BERT** | **0.5800** | **0.8125** | **0.8949** |
 
-The Hybrid median was 56.39 ms in `evaluate` and 58.06 ms in `analyze_errors.py` after index construction. End-to-end times, including dense setup, were 324.08 s and 254.11 s. Both commands produced the same rankings and quality metrics because they use the same evaluator and inputs.
+The Hybrid median was 56.39 ms in `evaluate` and 58.06 ms in `analyze_errors.py` after index construction. End-to-end times, including dense setup, were 324.08 s and 254.11 s. The two commands produced the same rankings and quality metrics with the same evaluator and inputs. The timings come from separate runs of that shared pipeline.
 
 ![Source passage with edition and passage SHA-256 values](demo/frame_2.png)
 
